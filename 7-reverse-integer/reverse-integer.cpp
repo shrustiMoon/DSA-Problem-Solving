@@ -7,9 +7,11 @@ public:
             reversenum = (reversenum*10)+ld;
             x = x / 10;
         }
-        if(reversenum>INT_MAX || reversenum<INT_MIN){
+        if(reversenum>INT_MAX||reversenum<INT_MIN){
             return 0;
         }
-        return (int)reversenum;
+        else{
+            return (int)reversenum;
+        }
     }
 };
